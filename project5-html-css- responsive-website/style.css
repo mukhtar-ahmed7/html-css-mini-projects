@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background-color: #3b5998;
+  height: 70px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navbar .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-list li {
+  position: relative;
+}
+
+.navbar .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-list li a:hover {
+  background-color: #333;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #282c34;
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+
+.hero p {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero-image {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover on H1 */
+.hero h1:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* Hover on hero paragraph */
+.hero p:hover {
+  background-color: white;
+  color:#333;
+}
+.hero-image {
+  transition: transform 0.3s ease-out;
+}
+ /* Hover On Image */
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+
+/* About Section */
+.about-main {
+  padding: 60px 20px;
+}
+
+.about-sec h1, .mission h2, .vision h2, .team h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #3b5998;
+  text-align: center;
+  
+}
+
+.about-sec h1 {
+  font-size: 42px;
+  margin-bottom: 10px ;
+  color: #3b5998;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  
+  
+}
+
+.about-sec p, .mission p, .vision p, .team p {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+.team h3 {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #333;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  line-height: 1.4;
+  word-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
+/* hover on about section */
+
+.about-sec h1:hover, .mission h2:hover, .vision h2:hover, .team h2:hover, .team h3:hover, .about-sec p:hover, .mission p:hover, .vision p:hover, .team p:hover {
+  color: #ff6347;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+/* Courses Section */
+.courses {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2.8em;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  
+  margin-bottom: 30px;
+  color: #3b5998;
+}
+
+.courses p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+.courses h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* hover on courses */
+.courses h2:hover, .courses p:hover, .courses h3:hover {
+  color: #ff6347;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.2);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-10px);
+}
+
+.article h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.article p {
+  font-size: 1em;
+  color: #555;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 360px;
+  height: 202px;
+  border-radius: 8px;
+  margin-top: 28px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+}
+
+.contact-us h1, .contact-form h2, .contact-info h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #3b5998;
+  text-align: center;
+}
+
+.contact-us h1 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-us p {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+input, textarea {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* hover on contact-us */
+.contact-us h1:hover, .contact-form h2:hover, .contact-info h2:hover, .contact-us p:hover, .contact-info p:hover {
+  color: #ff6347;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+.btn {
+  text-align: center;
+}
+
+button {
+  background-color: #3b5998;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* hover on footer */
+.main-footer:hover {
+  background-color:white;
+  color: #333;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .article {
+    width: 45%;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items:start;
+    padding: 10px 20px;
+  }
+
+  .navbar .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    width: 80%;
+  }
+
+  .about-main, .contact {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { padding: 130px 0 0 0;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .about-sec h1, .mission h2, .vision h2, .team h2, .contact-us h1, .contact-form h2, .contact-info h2 {
+    font-size: 1.8em;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
