@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Css-Html</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/header-logo.jpg" alt="image-logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+          I'm a passionate web developer creating amazing digital experiences.
+        </p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="/images/ml2p.jpeg" alt="profile-image" class="profile-image" />
+          <p>
+            Hello! I'm <strong>Mukhtar Ahmed</strong> & I'm a
+            <strong>Web Developer</strong> with a passion for creating beautiful
+            and functional websites. With expertise in HTML, CSS, and
+            JavaScript, I strive to deliver high-quality web solutions that
+            exceed client expectations.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML5</div>
+          <div class="skill-item">CSS3</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">Responsive Design</div>
+          <div class="skill-item">UI/UX Design</div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+          <!-- project-1 -->
+          <div class="project-card">
+            <img src="images/calculator.jpeg" alt="calculator-image" />
+            <h3>Project 1</h3>
+            <p>
+              A simple calculator UI for basic arithmetic operations, featuring
+              a clean design, responsive layout, and user-friendly interface.
+            </p>
+            <a href="https://simple-calculator-ui.vercel.app/" class="project-link"
+              >View Project</a
+            >
+          </div>
+
+          <!-- project-2 -->
+          <div class="project-card">
+            <img src="/images/count-down-timer.jpeg" alt="countdown-timer-image" />
+            <h3>Project 2</h3>
+            <p>
+              A responsive countdown timer UI that visually tracks time
+              remaining for events, featuring customization and user-friendly
+              design.
+            </p>
+            <a href="https://countdown-timer-ui.vercel.app/" class="project-link"
+              >View Project</a
+            >
+          </div>
+
+          <!-- project-3 -->
+          <div class="project-card">
+            <img src="/images/weather1.png" alt="weather-image" />
+            <h3>Project 3</h3>
+            <p>
+              A responsive weather UI displaying real-time temperature,
+              forecasts, and conditions with clean design and location-based
+              updates.
+            </p>
+            <a href="https://weather-ui-coral.vercel.app/" class="project-link">View Project</a>
+          </div>
+
+          <!-- project-4 -->
+          <div class="project-card">
+            <img src="/images/developer1.png" alt="developer-page-image" />
+            <h3>Project 4</h3>
+            <p>
+              A responsive developer landing page showcasing portfolio, skills,
+              and projects with a clean and modern design.
+            </p>
+            <a href="https://developer-landing-page-ui.vercel.app/" class="project-link">View Project</a>
+          </div>
+        </div>
+
+
+        <!-- project-5 -->
+        <div class="project-card">
+          <img src="/images/project5img.avif" alt="web-page-image" />
+          <h3>Project 5</h3>
+          <p>
+            Explore a beautifully crafted HTML and CSS website showcasing impressive design and interactive features.
+          </p>
+          <a href="https://html-css-website-delta.vercel.app/" class="project-link">View Project</a>
+        </div>
+      </div>
+      </section>
+
+      <!-- contact-form -->
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+      <p>Mukhtar Ahmed @ 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple JavaScript for mobile menu toggle -->
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
